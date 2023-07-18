@@ -58,7 +58,7 @@ window.onload = function() {
 };
 
 // cambie la carta cada 10 segundos
-setInterval(generateCard, 1000);
+setInterval(generateCard, 10000);
 
 function changeSize() {
   let width = document.getElementById("width").value;
@@ -70,7 +70,7 @@ function changeSize() {
   if (parseInt(height) >= 250) {
     cardSize.style.height = height + "px";
   } else {
-    alert("Height debe ser mayor a 250");
+    alert("Height debe ser mayor o igual a 250");
   }
 }
 
